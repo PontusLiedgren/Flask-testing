@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Min sida</title>
+        </head>
+    <body>
+        <form action="submit" method="POST">
+            <input type="text" name="item"/>
+        </form>
+
+        <h1>Items list</h1>
+        <p>Cool text</p>
+        {% for item in items %}
+        <p>{{ item }}</p>
+        {% endfor %}
+    </body>
+</html>
