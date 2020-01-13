@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Min sida</title>
-        </head>
+        <title>Highscore</title>
+    </head>
     <body>
-        <form action="submit" method="POST">
-            <input type="text" name="item"/>
-        </form>
-
-        <h1>Items list</h1>
-        <p>Cool text</p>
-        {% for item in items %}
-        <p>{{ item }}</p>
-        {% endfor %}
+        <h1>Highscore list</h1>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Highscore</th>
+                <th>Date</th>
+            </tr>
+            {% for highscore in highscores %}
+            <tr>
+                <td>{{ name["name"] }}</td>
+                <td>{{ highscore["score"] }}</td>
+                <td>{{ date["date"] }}</td>
+            </tr>
+            {% endfor %}
     </body>
 </html>
