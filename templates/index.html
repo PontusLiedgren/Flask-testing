@@ -13,9 +13,9 @@
             </tr>
             {% for highscore in highscores %}
             <tr>
-                <td>{{ name["name"] }}</td>
+                <td>{{ highscore["name"] }}</td>
                 <td>{{ highscore["score"] }}</td>
-                <td>{{ date["date"] }}</td>
+                <td>{{ highscore["date"] }}</td>
             </tr>
             {% endfor %}
     </body>
